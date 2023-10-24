@@ -17,6 +17,7 @@ code {
   background: linear-gradient(to bottom, #0099ff, #66ccff);
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  margin: 0;
 }
 
 .contact-form input,
@@ -60,7 +61,7 @@ code {
 /* ContactForm styling */
 .contact-form {
   flex: 1; /* This allows the component to take up the available space. */
-  margin-right: 2%; /* This creates a small gap between the form and the map. */
+
   /* ... (other styles) ... */
 }
 
