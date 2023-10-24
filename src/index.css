@@ -1,13 +1,71 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.contact-form {
+  width: 50%; /* This will take up half the page width. Adjust as needed */
+  background: linear-gradient(to bottom, #0099ff, #66ccff);
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px; /* rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #ffffff;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #0099ff, #66ccff);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* hand cursor on hover */
+  transition: 0.3s ease; /* smooth transition for hover effects */
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to bottom, #0077cc, #0099ff);
+}
+
+/* MapComponent styling */
+.map-component {
+  width: 50%; /* This will take up half the page width. Adjust as needed */
+  height: calc(100% + 40px); /* makes the map slightly taller */
+}
+
+/* ContactPage styling */
+.contact-page {
+  display: flex; /* This makes children elements (ContactForm and MapComponent) line up horizontally. */
+  justify-content: space-between; /* This creates space between the two components. */
+  flex-wrap: nowrap; /* This prevents the items from wrapping onto the next line. */
+}
+
+/* ContactForm styling */
+.contact-form {
+  flex: 1; /* This allows the component to take up the available space. */
+  margin-right: 2%; /* This creates a small gap between the form and the map. */
+  /* ... (other styles) ... */
+}
+
+/* MapComponent styling */
+.map-component {
+  flex: 2; /* This allows the component to take up twice the width of the ContactForm. */
+  /* ... (other styles) ... */
 }

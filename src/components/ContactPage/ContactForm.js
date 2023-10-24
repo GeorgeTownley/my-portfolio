@@ -23,13 +23,15 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={sendEmail}>
-      <input type="text" name="name" placeholder="Name" />
-      <input type="email" name="email" placeholder="Email" />
-      <input type="text" name="subject" placeholder="Subject" />
-      <textarea name="message" placeholder="Message"></textarea>
-      <input type="submit" value="Send" />
-    </form>
+    <div className="contact-form">
+      <form onSubmit={sendEmail}>
+        <input type="text" placeholder="Name" name="name" />
+        <input type="email" placeholder="Email" name="email" />
+        <textarea placeholder="Your Message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   );
 }
+
 export default ContactForm;

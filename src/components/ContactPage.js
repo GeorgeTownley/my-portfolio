@@ -2,17 +2,13 @@ import React from "react";
 import ContactForm from "./ContactPage/ContactForm";
 import MapComponent from "./ContactPage/MapComponent";
 
-const ContactPage = () => {
+function ContactPage() {
   return (
-    <div className="contact-page-container">
-      {/* You can add more styling and structure here if needed */}
-
+    <div className="contact-page">
       <ContactForm />
       <MapComponent />
-
-      {/* You can add more components or HTML elements below if required */}
     </div>
   );
-};
+}
 
 export default ContactPage;
