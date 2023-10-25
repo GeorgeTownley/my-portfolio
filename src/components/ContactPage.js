@@ -4,7 +4,7 @@ import MapComponent from "./ContactPage/MapComponent";
 
 function ContactPage() {
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <ContactForm />
       <MapComponent />
     </div>

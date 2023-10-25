@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-left: 90px;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -88,4 +89,11 @@ code {
 
 .map-component .leaflet-container {
   height: 100vh !important;
+}
+
+.full-screen-section {
+  min-height: 100vh; /* Will occupy at least one full viewport height */
+  padding: 90px;
+  box-sizing: border-box; /* This ensures that the padding is included in the height */
+  overflow-y: auto; /* Allows vertical scrolling if content exceeds the viewport height */
 }

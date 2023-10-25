@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="full-screen-section">
       <div className="project-box">
         <img src="project1.jpg" alt="Project 1" />
         <h2>Project 1</h2>
