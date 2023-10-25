@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-left: 90px;
 }
 
 code {
@@ -13,11 +14,12 @@ code {
 }
 
 .contact-form {
-  width: 50%; /* This will take up half the page width. Adjust as needed */
+  flex: 1;
   background: linear-gradient(to bottom, #0099ff, #66ccff);
   padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
+  min-width: 0; /* This allows for flex-shrinking, preventing overflow */
 }
 
 .contact-form input,
@@ -26,8 +28,8 @@ code {
   padding: 10px;
   margin: 10px 0;
   border: none;
-  border-radius: 5px; /* rounded corners */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
 
@@ -37,36 +39,53 @@ code {
   border-radius: 5px;
   background: linear-gradient(to bottom, #0099ff, #66ccff);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer; /* hand cursor on hover */
-  transition: 0.3s ease; /* smooth transition for hover effects */
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .contact-form button:hover {
   background: linear-gradient(to bottom, #0077cc, #0099ff);
 }
 
-/* MapComponent styling */
-.map-component {
-  width: 50%; /* This will take up half the page width. Adjust as needed */
-  height: calc(100% + 40px); /* makes the map slightly taller */
-}
-
-/* ContactPage styling */
 .contact-page {
-  display: flex; /* This makes children elements (ContactForm and MapComponent) line up horizontally. */
-  justify-content: space-between; /* This creates space between the two components. */
-  flex-wrap: nowrap; /* This prevents the items from wrapping onto the next line. */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 90px; /* Surrounding padding */
+  height: calc(100vh - 180px); /* Adjust for the added padding */
 }
 
-/* ContactForm styling */
-.contact-form {
-  flex: 1; /* This allows the component to take up the available space. */
-
-  /* ... (other styles) ... */
-}
-
-/* MapComponent styling */
 .map-component {
-  flex: 2; /* This allows the component to take up twice the width of the ContactForm. */
-  /* ... (other styles) ... */
+  flex: 1;
+  height: 100%;
+  width: calc(50% - 90px); /* Accounting for the 60px padding */
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90px;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-icon {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.map-component .leaflet-container {
+  height: 100vh !important;
 }

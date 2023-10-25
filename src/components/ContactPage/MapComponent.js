@@ -23,7 +23,7 @@ const MapComponent = () => {
       <MapContainer
         center={position}
         zoom={13}
-        style={{ width: "100%", height: "400px" }}
+        style={{ width: "100%", height: "100vh" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

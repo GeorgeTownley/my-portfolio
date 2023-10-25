@@ -13,15 +13,21 @@ library.add(faHome, faProjectDiagram, faEnvelope);
 const NavBar = () => {
   return (
     <div className="navbar">
-      <a href="#intro">
-        <FontAwesomeIcon icon={faHome} />
-      </a>
-      <a href="#projects">
-        <FontAwesomeIcon icon={faProjectDiagram} />
-      </a>
-      <a href="#contact">
-        <FontAwesomeIcon icon={faEnvelope} />
-      </a>
+      <div className="nav-icon">
+        <a href="#intro">
+          <FontAwesomeIcon icon={faHome} />
+        </a>
+      </div>
+      <div className="nav-icon">
+        <a href="#projects">
+          <FontAwesomeIcon icon={faProjectDiagram} />
+        </a>
+      </div>
+      <div className="nav-icon">
+        <a href="#contact">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </div>
     </div>
   );
 };
