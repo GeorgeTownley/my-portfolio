@@ -9,6 +9,10 @@ body {
   color: #b0b3b8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contact-form {
   flex: 1;
   background: linear-gradient(to bottom, #0099ff, #66ccff);
