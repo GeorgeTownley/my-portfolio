@@ -1,10 +1,8 @@
 import React from "react";
-import ThreeScene from "./ThreeScene"; // Make sure this path is correct
 
 const Intro = () => {
   return (
     <div className="intro-container" id="intro">
-      <ThreeScene />
       <span className="name">George Townley</span>
       <span className="tagline">Junior Software Developer</span>
       <p className="intro-paragraph">

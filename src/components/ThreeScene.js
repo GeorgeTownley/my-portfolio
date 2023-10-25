@@ -12,8 +12,9 @@ function ThreeScene() {
       0.1,
       1000
     );
+
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setClearColor(0x000000, 0); // This sets the background color to transparent.
+    renderer.setClearColor(0x000000, 0); // This sets the background color to black.
 
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -21,6 +22,8 @@ function ThreeScene() {
 
     scene.add(cube);
     camera.position.z = 5;
+    cube.position.x = -4; // move left
+    cube.position.y = 2; // move up
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -55,7 +58,7 @@ function ThreeScene() {
     };
   }, []);
 
-  return <div ref={mountRef}></div>;
+  return <div ref={mountRef} className="three-scene"></div>;
 }
 
 export default ThreeScene;
