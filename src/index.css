@@ -5,8 +5,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-left: 90px;
   scroll-behavior: smooth;
-  background-color: #1e1e1e; /* This is an approximation of the color from the VS Code editor area in the screenshot */
-  color: #ffffff;
+  background-color: #1e1e1e;
+  color: #b0b3b8;
 }
 
 code {
@@ -20,7 +20,7 @@ code {
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
-  min-width: 0; /* This allows for flex-shrinking, preventing overflow */
+  min-width: 0;
 }
 
 .contact-form input,
@@ -52,23 +52,49 @@ code {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 90px; /* Surrounding padding */
-  height: calc(100vh - 180px); /* Adjust for the added padding */
+  padding: 90px;
+  height: calc(100vh - 180px);
 }
 
 .map-component {
   flex: 1;
   height: 100%;
-  width: calc(50% - 90px); /* Accounting for the 60px padding */
+  width: calc(50% - 90px);
   overflow: hidden;
 }
 
+/* Added Styles */
 .container {
-  display: flex;
+  position: relative;
+  width: 100vw;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
+
+.three-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* End of Added Styles */
 
 .navbar {
   position: fixed;
@@ -92,23 +118,14 @@ code {
 }
 
 .full-screen-section {
-  min-height: 100vh; /* Will occupy at least one full viewport height */
+  min-height: 100vh;
   padding: 90px;
-  box-sizing: border-box; /* This ensures that the padding is included in the height */
-  overflow-y: auto; /* Allows vertical scrolling if content exceeds the viewport height */
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-/* Bright Green for the first icon */
-.navbar .faIcon1 {
-  color: #ebd234;
-}
-
-/* Magenta for the second icon */
-.navbar .faIcon2 {
-  color: #ebd234;
-}
-
-/* Cyan for the third icon */
+.navbar .faIcon1,
+.navbar .faIcon2,
 .navbar .faIcon3 {
   color: #ebd234;
 }
@@ -116,31 +133,81 @@ code {
 .navbar .faIcon1:active,
 .navbar .faIcon2:active,
 .navbar .faIcon3:active {
-  color: #ffffff; /* This changes the color to white when the icons are being clicked */
+  color: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertically center */
-  align-items: center; /* horizontally center */
-  height: 100vh; /* 100% of the viewport height */
-  text-align: center; /* center the text */
+.name {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #b0b3b8;
+}
+
+.intro-paragraph {
+  font-size: 1em;
+  max-width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.highlight-button {
+  background-color: #ebd234;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.highlight-button:hover {
+  background-color: #dab820;
 }
 
 button {
-  background-color: #333; /* or any color you prefer */
-  color: #fff; /* text color */
-  padding: 10px 20px; /* button padding */
-  border: none; /* removes border */
-  cursor: pointer; /* hand cursor on hover */
-  transition: 0.3s; /* smoothens the hover effect */
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #555; /* slightly lighter on hover */
+  background-color: #555;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.intro-paragraph {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-container > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
