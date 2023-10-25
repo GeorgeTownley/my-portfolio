@@ -1,12 +1,15 @@
 import React from "react";
 
-const Intro = () => {
+function Intro() {
   return (
-    <div id="intro" className="full-screen-section">
-      <h1>Hi, I'm George, a junior software developer</h1>
-      <button>Hire me!</button>
+    <div className="intro" id="intro">
+      <h1>Hi! my name's George</h1>
+      <h2>Junior Software Developer</h2>
+      <button onClick={() => (window.location.href = "#projects")}>
+        My Code
+      </button>
     </div>
   );
-};
+}
 
 export default Intro;
