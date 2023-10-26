@@ -4,6 +4,7 @@ import "../index.css";
 const Intro = () => {
   return (
     <div className="intro-container" id="intro">
+      <span className="highlight">Hi, my name is</span>
       <span className="name">George Townley</span>
       <span className="tagline">Junior Software Developer</span>
       <p className="intro-paragraph">

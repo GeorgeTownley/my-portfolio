@@ -24,7 +24,7 @@ function ContactForm() {
 
   return (
     <div className="contact-form">
-      <h2 class="get-in-touch-title">Get In Touch</h2>
+      <h2 className="get-in-touch-title">Get In Touch</h2>
 
       <form onSubmit={sendEmail}>
         <input type="text" placeholder="Name" name="name" />
@@ -34,7 +34,7 @@ function ContactForm() {
           placeholder="Your Message"
           name="message"
         ></textarea>
-        <button type="submit">Send</button>
+        <button className="highlight-button">Send</button>
       </form>
     </div>
   );
