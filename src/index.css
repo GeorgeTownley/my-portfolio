@@ -13,32 +13,57 @@ html {
   scroll-behavior: smooth;
 }
 
+.get-in-touch-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ebd234;
+}
+
 .contact-form {
   flex: 1;
-  background: linear-gradient(to bottom, #0099ff, #66ccff);
-  padding: 20px;
+  background: #333842;
+  padding: 40px; /* increased padding to utilize more of the blue space */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  height: 60px; /* Adjust this value as needed */
+}
+
+.contact-form textarea {
+  height: 180px; /* Set the height */
+  resize: none; /* Disable resizing */
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* adjusted padding for a better look */
   margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ebd234; /* yellow border */
+  border-radius: 0; /* sharp edges */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: transparent;
+  color: #ebd234; /* yellow text color */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ebd234; /* yellow placeholder text */
+  opacity: 1; /* for consistent color across browsers */
 }
 
 .contact-form button {
-  padding: 10px 20px;
+  padding: 12px 24px; /* adjusted padding for a better look */
   border: none;
-  border-radius: 5px;
-  background: linear-gradient(to bottom, #0099ff, #66ccff);
+  border-radius: 0; /* sharp edges */
+  background: #ebd234;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.3s ease;
+  color: #ffffff; /* white text on button for better contrast */
 }
 
 .contact-form button:hover {
@@ -121,7 +146,7 @@ html {
 
 .intro-paragraph {
   font-size: 1em;
-  max-width: 60%;
+  max-width: 50%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -148,12 +173,12 @@ html {
   overflow-y: auto;
 }
 
-.three-scene {
+/* components/SplineScene.css */
+.spline-background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

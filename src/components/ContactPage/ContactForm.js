@@ -24,10 +24,16 @@ function ContactForm() {
 
   return (
     <div className="contact-form">
+      <h2 class="get-in-touch-title">Get In Touch</h2>
+
       <form onSubmit={sendEmail}>
         <input type="text" placeholder="Name" name="name" />
         <input type="email" placeholder="Email" name="email" />
-        <textarea placeholder="Your Message" name="message"></textarea>
+        <textarea
+          type="message"
+          placeholder="Your Message"
+          name="message"
+        ></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
