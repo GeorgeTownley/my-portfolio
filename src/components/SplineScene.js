@@ -6,7 +6,7 @@ import "../index.css";
 function SplineScene() {
   return (
     <div className="spline-background">
-      <Spline scene="https://prod.spline.design/4iMaw3tLXDgD3uLM/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/ZzB2kKy2yaVajFmV/scene.splinecode" />
     </div>
   );
 }
