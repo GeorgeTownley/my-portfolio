@@ -1,14 +1,13 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import projects from "./ProjectData";
 
 const Projects = () => {
   return (
     <div id="projects" className="full-screen-section">
-      <div className="project-box">
-        <img src="project1.jpg" alt="Project 1" />
-        <h2>Project 1</h2>
-        <p>Small description</p>
-      </div>
-      {/* Add more project boxes here */}
+      {projects.map((project) => (
+        <ProjectCard key={project.id} project={project} />
+      ))}
     </div>
   );
 };
