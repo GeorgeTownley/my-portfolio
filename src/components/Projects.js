@@ -4,7 +4,7 @@ import projects from "./ProjectData";
 
 const Projects = () => {
   return (
-    <div id="projects" className="full-screen-section">
+    <div className="project-container">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
