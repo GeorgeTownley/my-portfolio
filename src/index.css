@@ -195,24 +195,40 @@ html {
 }
 
 .project-box {
-  flex-basis: calc(
-    33.33% - 20px
-  ); /* Assuming you want a small gap between them */
-  box-sizing: border-box; /* To include any padding or borders in the width */
-  background-color: #333842; /* This is a light grey. You can adjust the shade as needed. */
-  padding: 10px; /* Optional, to give some space between the card content and its edges */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional, for a subtle shadow effect */
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
+  background-color: #333842;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex; /* Turn the container into a flex container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Maximize space between items */
 }
 
 .project-box img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  order: 1; /* Place image first */
+}
+
+.project-box h2 {
+  /* Assuming your project name is in a h2 tag */
+  order: 2; /* Adjust order if needed */
+}
+
+.project-box p {
+  /* Assuming your description is in a p tag */
+  flex-grow: 1; /* Allow description to take up all available space */
+  order: 3; /* Adjust order if needed */
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
+  order: 4; /* Adjust order if needed */
 }
 
 .tag {
@@ -226,6 +242,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  order: 5; /* Place buttons last */
 }
 
 .buttons a {
