@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+  .spline-background {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+  /* Any other mobile-specific styles */
+}

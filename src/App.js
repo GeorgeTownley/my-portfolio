@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import ContactPage from "./components/ContactPage";
 import SplineScene from "./components/SplineScene";
 import "./App.css";
+import "./mobile.css";
 
 function App() {
   return (
