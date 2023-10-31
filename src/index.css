@@ -64,7 +64,10 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 90px;
+  padding-left: 200px;
+  padding-right: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   height: calc(100vh - 180px);
 }
 
@@ -113,12 +116,21 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   text-align: left;
   overflow: hidden;
   z-index: 4;
-  padding-left: 100px;
   width: 50%;
+}
+
+/* This applies when the screen width is 768px or more */
+@media (min-width: 768px) {
+  .intro-container {
+    height: 100vh;
+    /* You might want to reset the padding here or adjust as necessary */
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 200px;
+  }
 }
 
 .highlight {
@@ -174,7 +186,7 @@ html {
 
 .full-screen-projects {
   padding: 90px;
-  margin-left: 50px;
+  margin-left: 300px;
 }
 
 .spline-background {
@@ -190,13 +202,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 90px;
+  padding-left: 200px;
   padding-right: 90px;
 }
 
 .project-box {
   flex-basis: calc(33.33% - 20px);
-  margin-right: 20px;
   box-sizing: border-box;
   background-color: #333842;
   padding: 10px;

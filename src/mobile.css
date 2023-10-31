@@ -6,5 +6,41 @@
   .navbar {
     display: none;
   }
-  /* Any other mobile-specific styles */
+
+  /* Adjusting the font size of the intro text */
+  .intro-container {
+    width: 100%;
+    font-size: 16px; /* Adjust as needed */
+    margin: 0; /* Add some margins on the side for breathing room */
+    box-sizing: content-box;
+    padding: 20px;
+  }
+
+  /* In case you have specific classes for headings or larger texts within the intro */
+  .intro-container h1,
+  .intro-container h2,
+  .intro-container h3 {
+    font-size: 20px; /* Adjust based on your design */
+    margin: 0; /* Ensure there's space between headings and paragraphs */
+  }
+}
+
+.App {
+  width: 100%; /* Ensure it takes the full width */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Make sure padding and border do not add to the width */
+}
+
+/* To remove any default margin/padding from the body and html elements */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-container h1,
+.intro-container h2,
+.intro-container p {
+  margin: 0;
 }
