@@ -258,7 +258,9 @@ html {
 
 .buttons a {
   background-color: #333;
-  color: #fff;
+  color: #ebd234;
+  border-color: #ebd234;
+  border: 2px;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
