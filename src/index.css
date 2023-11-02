@@ -257,10 +257,11 @@ html {
 }
 
 .buttons a {
-  background-color: #333;
+  background-color: transparent;
   color: #ebd234;
+  border-width: 1px;
+  border-style: solid;
   border-color: #ebd234;
-  border: 2px;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
