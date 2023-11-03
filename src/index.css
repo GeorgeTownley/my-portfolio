@@ -231,9 +231,8 @@ html {
 }
 
 .project-box p {
-  /* Assuming your description is in a p tag */
-  flex-grow: 1; /* Allow description to take up all available space */
-  order: 3; /* Adjust order if needed */
+  flex-grow: 1;
+  order: 3;
 }
 
 .tags {
