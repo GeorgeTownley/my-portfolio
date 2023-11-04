@@ -213,21 +213,20 @@ html {
   padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-  display: flex; /* Turn the container into a flex container */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: space-between; /* Maximize space between items */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-box img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  order: 1; /* Place image first */
+  order: 1;
 }
 
 .project-box h2 {
-  /* Assuming your project name is in a h2 tag */
-  order: 2; /* Adjust order if needed */
+  order: 2;
 }
 
 .project-box p {
