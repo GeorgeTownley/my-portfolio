@@ -18,6 +18,13 @@ const Intro = () => {
       <a href="#projects">
         <button className="highlight-button">my code</button>
       </a>
+      <a
+        href="https://github.com/GeorgeTownley"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="highlight-button">GitHub</button>
+      </a>
     </div>
   );
 };

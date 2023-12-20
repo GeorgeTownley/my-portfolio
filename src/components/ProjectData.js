@@ -12,7 +12,7 @@ const projects = [
 
   {
     id: 2,
-    image: "./test.png",
+    image: "./crypto wizard.png",
     title: "Project 2",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur orci, sed finibus sapien. Mauris et ligula in eros consequat lacinia. Nullam at pellentesque massa. Aenean sit amet arcu mattis, egestas est in, dapibus odio. Integer euismod, turpis vitae sagittis tristique, odio felis egestas purus, a fringilla mauris diam a elit. Integer quis sapien quis justo condimentum pulvinar. Cras in arcu id magna dictum ultrices. In sodales dui ante, vel posuere justo elementum eu. Mauris accumsan fermentum suscipit. Phasellus posuere mattis magna, nec fringilla sapien pellentesque in. Proin ultrices nulla rhoncus lectus dapibus malesuada.",

@@ -9,6 +9,10 @@ body {
   color: #b0b3b8;
 }
 
+a {
+  padding: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
