@@ -13,7 +13,7 @@ const projects = [
   {
     id: 2,
     image: "./crypto wizard.png",
-    title: "Project 2",
+    title: "Crypto Wizard",
     description:
       "This Single Page Application (SPA) is a dynamic web application that provides real-time cryptocurrency data. It features a responsive table displaying the current rates, 24-hour rate changes, and full names of the top 20 cryptocurrencies. By fetching data from the Coinlayer API, it offers users updated cryptocurrency market insights. The application integrates historical data comparison to calculate and display the 24-hour change in rates, enriching user experience with valuable market trends.",
     tags: ["React", "API"],
