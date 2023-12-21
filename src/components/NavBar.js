@@ -16,19 +16,16 @@ const NavBar = () => {
     <div className="navbar">
       <div className="nav-icon">
         <a href="#intro">
-          {/* Add class for bright green */}
           <FontAwesomeIcon icon={faCircleUser} size="2x" className="faIcon1" />
         </a>
       </div>
       <div className="nav-icon">
         <a href="#projects">
-          {/* Add class for magenta */}
           <FontAwesomeIcon icon={faCode} size="2x" className="faIcon2" />
         </a>
       </div>
       <div className="nav-icon">
         <a href="#contact">
-          {/* Add class for cyan */}
           <FontAwesomeIcon icon={faPaperPlane} size="2x" className="faIcon3" />
         </a>
       </div>

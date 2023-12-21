@@ -17,7 +17,7 @@ const projects = [
     description:
       "This Single Page Application (SPA) is a dynamic web application that provides real-time cryptocurrency data. It features a responsive table displaying the current rates, 24-hour rate changes, and full names of the top 20 cryptocurrencies. By fetching data from the Coinlayer API, it offers users updated cryptocurrency market insights. The application integrates historical data comparison to calculate and display the 24-hour change in rates, enriching user experience with valuable market trends.",
     tags: ["React", "API"],
-    demoLink: "https://demo-link.com",
+    demoLink: "https://stellar-chaja-9d3edb.netlify.app/",
     repoLink: "https://github.com/GeorgeTownley/Crypto-App",
   },
 
