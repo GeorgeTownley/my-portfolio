@@ -15,7 +15,7 @@ const customIcon = new L.Icon({
   tooltipAnchor: [16, -28],
 });
 
-const position = [51.366592734211096, -0.7949523497659183]; // your coordinates
+const position = [51.366592734211096, -0.7949523497659183];
 
 const MapComponent = () => {
   return (
