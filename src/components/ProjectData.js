@@ -1,13 +1,13 @@
 const projects = [
   {
-    id: 1,
-    image: "./fanfare.png",
-    title: "Fanfare - Discord Bot",
+    id: 4,
+    image: "./factorio.png",
+    title: "Factorio Server",
     description:
-      "A Discord bot made to solve the problem of not knowing who had joined discord calls. The Bot assigns mp3 files to usernames and plays the relevant mp3 file when a user joins a voice channel.",
-    tags: ["SDK", "Node", "javascript"],
+      "This project is a Docker container setup for hosting a Factorio server. It demonstrates the use of Docker for containerizing applications, in this case, a popular game server.",
+    tags: ["Docker", "Containers", "Server Config"],
     demoLink: "",
-    repoLink: "https://github.com/GeorgeTownley/discord-bot",
+    repoLink: "https://github.com/GeorgeTownley/FactorioServerContainer",
   },
 
   {
@@ -30,6 +30,17 @@ const projects = [
     tags: ["React", "API", "Globe GL", "3D"],
     demoLink: "https://demo-link.com",
     repoLink: "https://github.com/GeorgeTownley/flight-globe-app",
+  },
+
+  {
+    id: 1,
+    image: "./fanfare.png",
+    title: "Fanfare - Discord Bot",
+    description:
+      "A Discord bot made to solve the problem of not knowing who had joined discord calls. The Bot assigns mp3 files to usernames and plays the relevant mp3 file when a user joins a voice channel.",
+    tags: ["SDK", "Node", "javascript"],
+    demoLink: "",
+    repoLink: "https://github.com/GeorgeTownley/discord-bot",
   },
 ];
 
