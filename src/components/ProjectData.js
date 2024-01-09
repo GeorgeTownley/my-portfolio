@@ -38,7 +38,7 @@ const projects = [
     title: "Fanfare - Discord Bot",
     description:
       "A Discord bot made to solve the problem of not knowing who had joined discord calls. The Bot assigns mp3 files to usernames and plays the relevant mp3 file when a user joins a voice channel.",
-    tags: ["SDK", "Node", "javascript"],
+    tags: ["SDK", "Node", "javascript", "API Token", "Environment Variables"],
     demoLink: "",
     repoLink: "https://github.com/GeorgeTownley/discord-bot",
   },
