@@ -90,7 +90,7 @@ html {
   justify-content: flex-start; /* Align to the top */
   height: auto; /* Let the height be determined by content */
   margin: 0 auto; /* Center the contact-page */
-  width: calc(100% - 40px); /* Full width minus padding */
+  width: calc(100%); /* Full width minus padding */
   box-sizing: border-box; /* Include padding in the width calculation */
 }
 
