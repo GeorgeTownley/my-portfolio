@@ -89,7 +89,6 @@
     height: auto; /* Let the height be determined by content */
     margin: 0 auto; /* Center the contact-page */
     width: calc(100%); /* Full width minus padding */
-    box-sizing: border-box; /* Include padding in the width calculation */
   }
 
   .contact-form {
