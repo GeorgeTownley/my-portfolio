@@ -23,88 +23,88 @@
     font-size: 20px; /* Adjust based on your design */
     margin: 0; /* Ensure there's space between headings and paragraphs */
   }
-}
 
-.App {
-  width: 100%; /* Ensure it takes the full width */
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Remove any margin */
-  box-sizing: border-box; /* Make sure padding and border do not add to the width */
-}
+  .App {
+    width: 100%; /* Ensure it takes the full width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Make sure padding and border do not add to the width */
+  }
 
-/* To remove any default margin/padding from the body and html elements */
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
+  /* To remove any default margin/padding from the body and html elements */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
 
-.intro-container h1,
-.intro-container h2,
-.intro-container p {
-  margin: 0;
-}
+  .intro-container h1,
+  .intro-container h2,
+  .intro-container p {
+    margin: 0;
+  }
 
-.project-container {
-  display: flex;
-  flex-direction: column; /* Stack project boxes vertically */
-  align-items: center; /* Center the boxes horizontally */
-  justify-content: flex-start; /* Align to the top */
-  padding-left: 0; /* Reset the padding for mobile */
-  padding-right: 0; /* Reset the padding for mobile */
-  gap: 15px; /* Optional: Adjust the gap between boxes if needed */
-  margin: 0 auto; /* Ensure it's centered */
-  width: 100%; /* Full width */
-}
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* or 'flex-start' if you prefer */
+    gap: 30px; /* This sets the space between the cards */
+    padding-left: 200px;
+    padding-right: 90px;
+  }
 
-.project-box {
-  width: calc(100% - 40px); /* Take the full width minus some padding */
-  margin: 0 auto; /* Center the box */
-  padding: 20px; /* Adjust padding as needed for mobile */
-  box-sizing: border-box; /* Include padding in the width calculation */
-  flex-basis: auto; /* Override any previous flex-basis settings */
-}
+  .project-box {
+    flex-basis: calc(
+      33.33% - 20px
+    ); /* Adjust the 20px if needed based on your gap */
+    margin-bottom: 30px; /* Add space between rows */
+    box-sizing: border-box;
+    background-color: #333842;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 
-/* Ensure images within the project-box are responsive and do not overflow */
-.project-box img {
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the image is scaled properly */
-}
+  /* Ensure images within the project-box are responsive and do not overflow */
+  .project-box img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is scaled properly */
+  }
 
-/* Adjust the buttons inside the project box for better mobile appearance */
-.project-box .buttons a {
-  margin: 5px 0; /* Give some vertical margin for stacked buttons */
-  padding: 8px 16px; /* Adjust padding for smaller screens */
-}
+  /* Adjust the buttons inside the project box for better mobile appearance */
+  .project-box .buttons a {
+    margin: 5px 0; /* Give some vertical margin for stacked buttons */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
 
-/* You may also want to adjust font sizes and other properties within the project-box for mobile */
+  /* You may also want to adjust font sizes and other properties within the project-box for mobile */
 
-.contact-page {
-  padding-left: 20px; /* Smaller padding for mobile */
-  padding-right: 20px; /* Smaller padding for mobile */
-  padding-top: 20px; /* Adjust top padding */
-  padding-bottom: 20px; /* Adjust bottom padding */
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center elements horizontally */
-  justify-content: flex-start; /* Align to the top */
-  height: auto; /* Let the height be determined by content */
-  margin: 0 auto; /* Center the contact-page */
-  width: calc(100%); /* Full width minus padding */
-  box-sizing: border-box; /* Include padding in the width calculation */
-}
+  .contact-page {
+    padding-left: 20px; /* Smaller padding for mobile */
+    padding-right: 20px; /* Smaller padding for mobile */
+    padding-top: 20px; /* Adjust top padding */
+    padding-bottom: 20px; /* Adjust bottom padding */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: flex-start; /* Align to the top */
+    height: auto; /* Let the height be determined by content */
+    margin: 0 auto; /* Center the contact-page */
+    width: calc(100%); /* Full width minus padding */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
 
-.contact-form {
-  width: 100%; /* Full width for mobile */
-  margin-bottom: 20px; /* Add some space below the form */
-}
+  .contact-form {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add some space below the form */
+  }
 
-.map-component {
-  width: 100%; /* Full width for mobile */
-  height: auto; /* Adjust height for mobile */
-  margin-bottom: 20px; /* Add some space below the map */
-}
+  .map-component {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height for mobile */
+    margin-bottom: 20px; /* Add some space below the map */
+  }
 
-.map-component .leaflet-container {
-  height: 250px; /* Fixed height for mobile or based on aspect ratio */
+  .map-component .leaflet-container {
+    height: 250px; /* Fixed height for mobile or based on aspect ratio */
+  }
 }

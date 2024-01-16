@@ -14,9 +14,13 @@ const ProjectCard = ({ project }) => {
         ))}
       </div>
       <div className="buttons">
-        <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-          Demo
-        </a>
+        {project.demoLink ? (
+          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+            Demo
+          </a>
+        ) : (
+          <span className="disabled-button">Demo</span>
+        )}
         <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
           GitHub Repo
         </a>
