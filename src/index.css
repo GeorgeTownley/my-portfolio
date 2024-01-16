@@ -68,7 +68,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-right: 90px;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -133,7 +133,7 @@ html {
     /* You might want to reset the padding here or adjust as necessary */
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 200px;
+    padding-left: 100px;
   }
 }
 
@@ -206,7 +206,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-right: 90px;
   gap: 30px;
 }
