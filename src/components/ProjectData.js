@@ -28,7 +28,7 @@ const projects = [
     description:
       "Currently under construction. An app that uses the opensky API to fetch current flight data then display the route and location of the aircraft on the globe (rendered using globe.gl)",
     tags: ["React", "API", "Globe GL", "3D"],
-    demoLink: "https://demo-link.com",
+    demoLink: "",
     repoLink: "https://github.com/GeorgeTownley/flight-globe-app",
   },
 
