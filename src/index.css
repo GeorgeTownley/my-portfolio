@@ -270,6 +270,18 @@ html {
   text-decoration: none;
 }
 
+.disabled-button {
+  color: grey; /* Light grey text to indicate it is disabled */
+  border: 1px solid grey; /* Light grey border to match the text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: not-allowed; /* Cursor indicates the button is disabled */
+  background-color: transparent;
+  display: inline-block; /* To apply padding and border correctly */
+  margin: 0 10px;
+}
+
 .project-box h2 {
   color: #ebd234;
 }
